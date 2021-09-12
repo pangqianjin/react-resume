@@ -22,10 +22,10 @@ export default class MyModule extends Component {
     }
 
     render() {
-        const {title, color, rows, avatar} = this.props
+        const {title, color, rows, avatar, index} = this.props
         return (
             <div className='my-module'>
-                <MyTitleBar title={title} color={color} />
+                <MyTitleBar title={title} index={index} color={color} />
                 <div className="content">
                     <div className='rows'>
                     {

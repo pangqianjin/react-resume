@@ -1,16 +1,16 @@
 import MyModule from './components/MyModule';
-import defaultModules from './templates/default.json'
 import React, { Component } from 'react'
 import './App.css';
+import { connect } from 'react-redux';
 
-export default class App extends Component {
+class App extends Component {
 
   render() {
     return (
       <div className="App">
       {
-        defaultModules.modules.map((module, index)=>(
-          <MyModule key={index} title={module.title} color={module.color} rows={module.rows} avatar={module.avatar} />)
+        this.props.modules.map((module, index)=>(
+          <MyModule key={index} index={index} title={module.title} color={module.color} rows={module.rows} avatar={module.avatar} />)
         )
       }
     </div>
@@ -18,3 +18,6 @@ export default class App extends Component {
   }
 }
 
+export default connect(
+  (state)=>({modules: state.modules})
+)(App)
