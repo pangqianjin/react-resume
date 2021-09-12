@@ -1,0 +1,41 @@
+.my-row{
+    position: relative;
+}
+
+.my-row:hover{
+    outline: dashed green 1px;
+}
+
+.my-row .items{
+    display: flex;
+}
+
+.my-row .items .item{
+    display: flex;
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.my-row .tools{
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    width: fit-content;
+}
+
+.my-row:hover .tools{
+    display: block;
+}
+
+.my-row .items .item .title{
+    color: #666666;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.my-row .items .item .text{
+    text-align: left;
+    color: #666666;
+    padding: 0 0.5rem;
+}
