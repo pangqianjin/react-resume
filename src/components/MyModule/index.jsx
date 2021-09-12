@@ -22,14 +22,14 @@ export default class MyModule extends Component {
     }
 
     render() {
-        const {title, color, rows, avatar, index} = this.props
+        const {title, color, rows, avatar} = this.props
         return (
             <div className='my-module'>
-                <MyTitleBar title={title} index={index} color={color} />
+                <MyTitleBar title={title} index={this.props.index} color={color} />
                 <div className="content">
                     <div className='rows'>
                     {
-                        rows.map((row, index)=>(<MyRow key={index} items={row} />))
+                        rows.map((row, index)=>(<MyRow lineIndex={index} moduleIndex={this.props.index} key={index} items={row} />))
                     } 
                     </div>
                     <div className="avatar" style={{display: avatar?'block': 'none'}}>

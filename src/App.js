@@ -2,17 +2,23 @@ import MyModule from './components/MyModule';
 import React, { Component } from 'react'
 import './App.css';
 import { connect } from 'react-redux';
+import MyNewLineSelector from './components/MyNewLineSelector';
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
-      {
-        this.props.modules.map((module, index)=>(
-          <MyModule key={index} index={index} title={module.title} color={module.color} rows={module.rows} avatar={module.avatar} />)
-        )
-      }
+        <div id='editing-area'>
+        {
+          this.props.modules.map((module, index)=>(
+            <MyModule key={index} index={index} title={module.title} color={module.color} rows={module.rows} avatar={module.avatar} />)
+          )
+        }
+        </div>
+      
+      {/* 插入新行 */}
+      <MyNewLineSelector />
     </div>
     )
   }

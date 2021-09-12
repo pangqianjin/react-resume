@@ -1,5 +1,5 @@
 import { combineReducers } from "redux"
-import { ADD_LINE, ADD_MODULE, DEL_LINE, DEL_MODULE, UPDATE_COLOR, UPDATE_LINE } from "./action-types"
+import { ADD_LINE, ADD_MODULE, DEL_LINE, DEL_MODULE, UPDATE_COLOR, UPDATE_LINE_INDEX, UPDATE_MODULE_INDEX } from "./action-types"
 import initialState from "./initialState"
 
 const modulesReducer = (modules=initialState.modules, action)=>{
@@ -18,13 +18,6 @@ const modulesReducer = (modules=initialState.modules, action)=>{
             newModules.splice(index, 1)
             return newModules
         }   
-        case UPDATE_LINE: // 更新一行
-        {
-            const {line, moduleIndex, lineIndex} = action.data
-            const newModules = [...modules]
-            newModules[moduleIndex].rows.splice(lineIndex, 1, line)
-            return newModules
-        }
         case ADD_LINE: // 添加一行
         {
             const {line, moduleIndex, lineIndex} = action.data
@@ -53,7 +46,27 @@ const colorReducer = (color=initialState.color, action)=>{
     }
 }
 
+const moduleIndexReducer = (moduleIndex=initialState.moduleIndex, action)=>{
+    switch(action.type){
+        case UPDATE_MODULE_INDEX: 
+            return action.data
+        default: 
+            return moduleIndex
+    }
+}
+
+const lineIndexReducer = (lineIndex=initialState.lineIndex, action) =>{
+    switch(action.type){
+        case UPDATE_LINE_INDEX: 
+            return action.data
+        default: 
+            return lineIndex
+    }
+}
+
 export default combineReducers({
     modules: modulesReducer,
-    color: colorReducer
+    color: colorReducer,
+    moduleIndex: moduleIndexReducer,
+    lineIndex: lineIndexReducer
 })

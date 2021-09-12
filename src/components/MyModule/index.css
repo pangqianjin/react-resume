@@ -1,6 +1,7 @@
 .my-module .content{
     display: flex;
     position: relative;
+    padding: 1rem;
 }
 
 .my-module .content .rows{
@@ -10,7 +11,7 @@
 .my-module .content .avatar{
     position: absolute;
     right: 1rem;
-    top: 1rem;
+    top: 0.5rem;
 }
 
 .my-module .content .avatar .tip{

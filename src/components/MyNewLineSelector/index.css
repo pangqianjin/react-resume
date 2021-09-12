@@ -1,0 +1,50 @@
+#newline-selector{
+  display: none;
+  padding: 2rem;
+  background-color: white;
+  text-align: left;
+  position: fixed;
+  z-index: 2;
+  top: 10%;
+  left: 30%;
+  border: solid 1px;
+  border-radius: 1rem;
+}
+
+#newline-selector>button{
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  left: 43%;
+  top: 0.5rem;
+  background-color: #6C757D;
+}
+
+#newline-selector .line-type{
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+#newline-selector .line-type:hover{
+  background-color: #CECECE;
+}
+
+#newline-selector .line-type .title{
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #6C757D;
+  color: white;
+}
+
+#newline-selector .line-type button{
+    position: absolute;
+    font-size: 1.5rem;
+    background-color: #00D68F;
+    color: white;
+    border-radius: 0.5rem;
+    top: 1rem;
+    right: 1rem;
+}
