@@ -1,0 +1,31 @@
+.my-module .content{
+    display: flex;
+    position: relative;
+}
+
+.my-module .content .rows{
+    width: 100%;
+}
+
+.my-module .content .avatar{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.my-module .content .avatar .tip{
+    position: absolute;
+    display: none;
+    background-color: lightskyblue;
+    color: white;
+}
+
+.my-module .content .avatar:hover .tip{
+    display: block;
+    cursor: pointer;
+}
+
+.my-module .content .avatar img{
+    width: 80px;
+    height: 96px;
+}
