@@ -3,12 +3,14 @@ import React, { Component } from 'react'
 import './App.css';
 import { connect } from 'react-redux';
 import MyNewLineSelector from './components/MyNewLineSelector';
+import MyToolBar from './components/MyToolBar';
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
+        <MyToolBar id='toolbar' />
         <div id='editing-area'>
         {
           this.props.modules.map((module, index)=>(

@@ -1,0 +1,72 @@
+.my-toolbar{
+    display: flex;
+    position: relative;
+    left: 30%;
+}
+
+.my-toolbar .color-picker{
+    width: max-content;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.my-toolbar .color-picker .block-picker{
+    top: 0.7rem;
+    display: none;
+}
+
+.my-toolbar .color-picker:hover .block-picker{
+    display: block;
+}
+
+.my-toolbar .color-picker .block-picker :nth-child(2){
+    height: 1.5rem;
+}
+
+
+
+.my-toolbar .download-option{
+    width: max-content;
+    position: absolute;
+    margin: 0 15rem;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.my-toolbar .download-option .download-buttons{
+    display: none;
+}
+
+.my-toolbar .download-option:hover .download-buttons{
+    display: block;
+}
+
+.my-toolbar .download-option .download-buttons .download-jpg{
+    margin: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #FFAA00;
+    color: black;
+    font-weight: bold;
+}
+.my-toolbar .download-option .download-buttons .download-jpg:hover{
+    cursor: pointer;
+}
+
+.my-toolbar .download-option .download-buttons .download-pdf{
+    margin: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #00D68F;
+    color: black;
+    font-weight: bold;
+}
+
+.my-toolbar .download-option .download-buttons .download-pdf{
+    cursor: pointer;
+}

@@ -1,4 +1,10 @@
-.App {
+.App .my-toolbar{
+  position: fixed;
+  top: 1rem;
+  z-index: 1;
+}
+
+#editing-area {
   text-align: center;
   font-size: 20px;
   padding: 1rem;
