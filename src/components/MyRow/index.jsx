@@ -33,7 +33,7 @@ class MyRow extends Component {
                     items.map((item, index)=>(
                         <div className='item' key={index} style={{width: `${items.length>0?100/items.length:100}%`}}>
                             {item.title&&<span suppressContentEditableWarning contentEditable className='title'>{item.title}</span>}
-                            <span suppressContentEditableWarning contentEditable className='text'>
+                            <span suppressContentEditableWarning contentEditable={!!item.text} className='text'>
                                 {
                                     item.text?.split("\n").filter(line=>line!=="").map((line, index)=>(<div key={index}>{line}</div>))
                                 }

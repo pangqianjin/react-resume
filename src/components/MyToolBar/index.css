@@ -1,13 +1,24 @@
 .my-toolbar{
     display: flex;
     position: relative;
-    left: 30%;
+    left: 27%;
+}
+
+.my-toolbar .template-selector{
+    width: max-content;
+    cursor: pointer;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .my-toolbar .color-picker{
     width: max-content;
     position: absolute;
     color: black;
+    margin: 0 10rem;
     font-weight: bold;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -31,7 +42,7 @@
 .my-toolbar .download-option{
     width: max-content;
     position: absolute;
-    margin: 0 15rem;
+    margin: 0 25rem;
     color: black;
     font-weight: bold;
     padding: 0.5rem;

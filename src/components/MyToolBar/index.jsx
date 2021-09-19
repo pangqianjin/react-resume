@@ -7,6 +7,13 @@ import jsPDF from 'jspdf'
 import './index.css'
 
 class MyToolBar extends Component {
+    switchTemplate = ()=>{
+        const newLineSelector = document.getElementById('template-selector')
+        newLineSelector.style.display = 'block'
+        document.querySelector('#editing-area').style.opacity = '0.2'
+
+    }
+
     handleColorChange = (color)=>{
         this.props.updateColor(color.hex)
     }
@@ -37,6 +44,8 @@ class MyToolBar extends Component {
 
         return (
             <div className='my-toolbar'>
+                <div onClick={this.switchTemplate} className='template-selector' style={{backgroundColor: color}}>模板</div>
+
                 <div className='color-picker' style={{backgroundColor: color}}>
                     调色
                     <BlockPicker color={color} onChange={this.handleColorChange} />

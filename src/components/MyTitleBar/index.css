@@ -3,10 +3,10 @@
 }
 
 .my-title-bar .title{
-    width: fit-content;
     font-weight: bold;
+    text-align: left;
+    margin-top: 2rem;
     font-size: 1.5rem;
-    border-radius: 2rem 2rem 2rem 0;
     padding: 0.5rem 1.5rem;
 }
 

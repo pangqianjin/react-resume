@@ -22,20 +22,29 @@ export default class MyModule extends Component {
     }
 
     render() {
-        const {title, color, rows, avatar} = this.props
+        const {name, title, rows, avatar} = this.props
         return (
             <div className='my-module'>
-                <MyTitleBar title={title} index={this.props.index} color={color} />
+                {
+                    name && <div className="name" style={{textAlign: name.center?'center':'left'}}>{name.title}</div>
+                }
+
+                {
+                    title && (<MyTitleBar title={title} index={this.props.index} />)
+                }
+                
                 <div className="content">
                     <div className='rows'>
                     {
                         rows.map((row, index)=>(<MyRow lineIndex={index} moduleIndex={this.props.index} key={index} items={row} />))
                     } 
                     </div>
-                    <div className="avatar" style={{display: avatar?'block': 'none'}}>
+
+                    {avatar && (<div className="avatar">
                         <span onClick={this.uploadAvatar} className="tip">修改</span>
                         <img src={require('../../imgs/default-avatar.png').default} alt="点击上传头像" />
-                    </div>
+                    </div>)
+                    } 
                 </div>   
             </div>
         )

@@ -1,0 +1,39 @@
+{
+    "modules": [
+        {
+            "title": "基本信息", 
+            "rows": [
+                [{"title":"姓名：","text":"极简"}, {"title":"学历：","text":"本科"}],
+                [{"title": "性别：", "text":"男"}, {"title":"年龄：", "text":"23"}],
+                [{"title": "手机：", "text":"18888888888"}, {"title":"邮箱：", "text":"pb@polebrief.com"}]
+            ],
+            "avatar": true
+        },
+        {
+            "title": "教育背景", 
+            "rows": [
+                [{"text":"Polebrief大学"}, {"text":"软件工程"}, {"text":"2015.9-2019.6"}],
+                [{"text": "GPA：X.X/4.0（专业前X%或者专业排名前10） \n荣誉/奖项：XX奖学金 \n主修课程：尽量填写和求职意向相关的主修课程（多数情况可以不写）"}]
+            ]
+        },
+        {
+            "title": "实习经验", 
+            "rows": [
+                [{"text": "1、时间倒序\n2、可以简单描述公司\n3、详细分析JD关键词，工作内容贴近招聘要求，可采用Star法则来详细描述，按照工作背景，工作内容，取得成果。参考右侧高分技巧。\n4、可以单独写《校园经历》模块,是班级班长，XX社团XX，校学生会XX+描述自己的主要工作内容+取得成就,体现出自己的能力和优势，比如：\n5、负责班级日常组织工作，策划班集体团建，达到优秀的班集体。\n6、负责社团（学生会）日常工作，支持老师学生工作，组织策划演讲比赛活动、读书活动、组建校园互助团队等"}]
+            ]
+        },
+        {
+            "title": "专业技能", 
+            "rows": [
+                [{"text": "可以写和职位相近的专业技能名称以及写明熟悉程度比如：\n个人对以下技术具备一定了解及使用、开发经验:Java、SpringBoot、SpringCloud、Mybatis、SpringDataJpa、Hibernate、RabbitMQ 等"}]
+            ]
+        }
+    ],
+    "color": "#50E3C2",
+    "titleBar": {
+        "borderRadius": "0",
+        "backgroundColor": false,
+        "width": "fit-content",
+        "underline": true
+    }
+}

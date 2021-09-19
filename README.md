@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## 默认模板
-![](./src/imgs/demo.png)
+![](./src/imgs/demo0.png)
 
 ## Available Scripts
 

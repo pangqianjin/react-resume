@@ -4,6 +4,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import MyNewLineSelector from './components/MyNewLineSelector';
 import MyToolBar from './components/MyToolBar';
+import MyTemplateSelector from './components/MyTemplateSelector';
 
 class App extends Component {
 
@@ -14,13 +15,15 @@ class App extends Component {
         <div id='editing-area'>
         {
           this.props.modules.map((module, index)=>(
-            <MyModule key={index} index={index} title={module.title} color={module.color} rows={module.rows} avatar={module.avatar} />)
+            <MyModule key={index} index={index} name={module.name} title={module.title} rows={module.rows} avatar={module.avatar} />)
           )
         }
         </div>
       
       {/* 插入新行 */}
       <MyNewLineSelector />
+      {/* 模板选择 */}
+      <MyTemplateSelector />
     </div>
     )
   }

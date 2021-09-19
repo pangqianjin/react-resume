@@ -1,9 +1,11 @@
 import { combineReducers } from "redux"
-import { ADD_LINE, ADD_MODULE, DEL_LINE, DEL_MODULE, UPDATE_COLOR, UPDATE_LINE_INDEX, UPDATE_MODULE_INDEX } from "./action-types"
+import { ADD_LINE, ADD_MODULE, DEL_LINE, DEL_MODULE, UPDATE_ALL_MODULES, UPDATE_COLOR, UPDATE_LINE_INDEX, UPDATE_MODULE_INDEX, UPDATE_TITLE_BAR } from "./action-types"
 import initialState from "./initialState"
 
 const modulesReducer = (modules=initialState.modules, action)=>{
     switch(action.type){  
+        case UPDATE_ALL_MODULES: // 更新所有模块
+            return action.data
         case ADD_MODULE: // 添加模块
         {
             const {index, module} = action.data// howMany=0
@@ -64,9 +66,19 @@ const lineIndexReducer = (lineIndex=initialState.lineIndex, action) =>{
     }
 }
 
+const titleBarReducer = (titleBar=initialState.titleBar, action)=>{
+    switch(action.type){
+        case UPDATE_TITLE_BAR: 
+            return action.data
+        default: 
+            return titleBar
+    }
+}
+
 export default combineReducers({
     modules: modulesReducer,
     color: colorReducer,
     moduleIndex: moduleIndexReducer,
-    lineIndex: lineIndexReducer
+    lineIndex: lineIndexReducer,
+    titleBar: titleBarReducer
 })

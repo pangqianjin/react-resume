@@ -8,12 +8,17 @@
 
 .my-row .items{
     display: flex;
+    margin-bottom: 0.5rem;
 }
 
 .my-row .items .item{
     display: flex;
     padding: 0 1rem;
-    margin: 0.5rem 0;
+    margin: 0.5rem;
+}
+
+.my-row .items .item .title{
+    white-space: nowrap;
 }
 
 .my-row .tools{

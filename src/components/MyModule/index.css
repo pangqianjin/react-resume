@@ -1,3 +1,9 @@
+.my-module .name{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
 .my-module .content{
     display: flex;
     position: relative;
