@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
-[在线体验地址](https://react-resume-beige.vercel.app/)
+[在线体验地址]https://react-resume-umber.vercel.app/)
 
-This project was bootstrapped with [Create React App](https://react-resume-umber.vercel.app/).
+This project was bootstrapped with [Create React App](https://create-react-app.dev).
 
 ## 默认模板
 ![](./src/imgs/demo0.png)
