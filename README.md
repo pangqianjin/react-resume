@@ -2,7 +2,7 @@
 
 [在线体验地址](https://react-resume-beige.vercel.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://react-resume-umber.vercel.app/).
 
 ## 默认模板
 ![](./src/imgs/demo0.png)
