@@ -8,7 +8,6 @@
 
 .my-row .items{
     display: flex;
-    margin-bottom: 0.5rem;
 }
 
 .my-row .items .item{
